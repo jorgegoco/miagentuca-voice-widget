@@ -1,0 +1,6 @@
+/* @miagentuca/voice-widget — override these on .vw-root or any ancestor */
+:root {
+  --vw-bg: #0a192f;
+  --vw-accent: #0ea5e9;
+  --vw-text: #e2e8f0;
+}
