@@ -84,4 +84,5 @@ next to the widget.
 npm install
 npm run build   # dist/index.js, dist/index.d.ts, dist/style.css
 npm run demo    # http://localhost:5173
+npm run smoke   # with the demo running: stubbed token -> connect error shown
 ```
