@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react"
 import type { ConnectionState, TranscriptEntry, VocalBridgeError } from "@vocalbridgeai/sdk"
 import type { VoiceLabels } from "./labels"
+import type { CardField, CardState, CardValues } from "./card"
 
 export interface VoiceSession {
   state: ConnectionState
@@ -12,7 +13,12 @@ export interface VoiceSession {
   timedOut: boolean
   transcript: ReadonlyArray<TranscriptEntry>
   error: VocalBridgeError | null
+  /** Send a page action to the agent (no-op while not connected) */
   sendAction: (action: string, payload?: Record<string, unknown>) => Promise<void>
+  fields: CardField[]
+  card: CardState
+  /** Change card values from the page; the agent gets a ui_sync like for its own actions */
+  updateCard: (patch: CardValues) => void
   labels: VoiceLabels
 }
 
