@@ -25,7 +25,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "demo": "vite --config demo/vite.config.ts",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "smoke": "node scripts/smoke.cjs"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
