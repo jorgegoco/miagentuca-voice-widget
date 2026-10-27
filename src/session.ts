@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react"
 import type { ConnectionState, TranscriptEntry, VocalBridgeError } from "@vocalbridgeai/sdk"
 import type { VoiceLabels } from "./labels"
-import type { CardField, CardState, CardValues } from "./card"
+import type { CardField, CardState, CardValues } from "./card-model"
 
 export interface VoiceSession {
   state: ConnectionState

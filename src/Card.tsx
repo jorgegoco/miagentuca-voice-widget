@@ -1,5 +1,5 @@
-import type { CardField, CardState, CardValue } from "./card"
-import { hasContent } from "./card"
+import type { CardField, CardState, CardValue } from "./card-model"
+import { hasContent } from "./card-model"
 import { SparkleIcon } from "./icons"
 
 export interface CardProps {

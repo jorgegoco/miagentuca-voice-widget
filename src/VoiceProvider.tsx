@@ -11,7 +11,7 @@ import {
   type CardField,
   type CardState,
   type CardValues,
-} from "./card"
+} from "./card-model"
 
 export interface VoiceProviderProps {
   /** Base URL of the token service, e.g. https://voice.miagentuca.es */
